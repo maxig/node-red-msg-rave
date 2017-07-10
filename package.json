@@ -1,0 +1,24 @@
+{
+  "name": "msg-rave",
+  "version": "0.1.0",
+  "description": "Messagepack (msgpack) Node-Red node alternative implementation, using more common 'msgpack-lite'. Tested well with Ruby ;)",
+  "node-red": {
+    "nodes": {
+      "msgpack-rave": "msg-rave.js"
+    }
+  },
+  "keywords": [
+    "msgpack",
+    "messagepack",
+    "json"
+  ],
+  "author": {
+    "name": "Maxim Gordienok @MaxIG",
+    "email": "maxim@gordienok.com",
+    "url": "https://gordienok.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "msgpack-lite": "^0.1.26"
+  }
+}

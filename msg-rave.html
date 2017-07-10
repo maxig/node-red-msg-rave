@@ -1,0 +1,30 @@
+<script type="text/x-red" data-template-name="msg-rave">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="msg-rave">
+    <p>A function that implements MessagePack support. Trying to convert the <code>msg.payload</code> to and from <a href = "https://github.com/msgpack/msgpack-node"><i>msgpack</i></a> format.</p>
+    <p>Thie alternative implementation uses <code>msgpack-lite</code> JS package, which was found as more reliable.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('msg-rave',{
+        category: 'function',
+        color: "#938947",
+        defaults: {
+            name: { value: "msgpack-rave" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "parser-json.png",
+        label: function() {
+            return this.name || "msg-rave";
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        }
+    });
+</script>
